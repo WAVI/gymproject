@@ -2,21 +2,21 @@
   <div>
   <Nbar></Nbar>
   <carousel-component></carousel-component>
-  <Featurette1></Featurette1>
+  <Featurette></Featurette>
   </div>
 </template>
 
 <script>
 import Nbar from './components/Header/NBar.vue'
 import CarouselComponent from './components/Header/CarouselComponent.vue'
-import Featurette1 from './components/Main/Featurette1.vue'
+import Featurette from './components/Main/Featurette.vue'
 
 export default {
   name: 'app',
   components: {
     Nbar,
     CarouselComponent,
-    Featurette1
+    Featurette
   }
 }
 </script>

@@ -47,7 +47,7 @@
 <script>
 export default {
   props: {
-    items: {
+    src: {
       type: Array,
       required: true
     }
