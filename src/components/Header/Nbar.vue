@@ -10,19 +10,19 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">Why Join Us</a>
+              <a class="nav-link js-scroll-trigger" href="#why">Why Join Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#services">Price</a>
+              <a class="nav-link js-scroll-trigger" href="#Price">Price</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Become member</a>
+              <a class="nav-link js-scroll-trigger" href="#member">Become member</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">About us</a>
+              <a class="nav-link js-scroll-trigger" href="#about">About us</a>
             </li>
           </ul>
         </div>
