@@ -8,7 +8,8 @@
         </ol>
         <div class="carousel-inner" role="listbox">
           <!-- Slide One - Set the background image for this slide in the line below -->
-          <div class="carousel-item active" style="background-image: url('http://placehold.it/1900x1080')">
+          <div class="carousel-item active">
+            <img  src="../../assets/2.png" alt="First Slide">
             <div class="carousel-caption d-none d-md-block">
               <h3>First Slide</h3>
               <p>This is a description for the first slide.</p>
@@ -16,14 +17,15 @@
           </div>
           <!-- Slide Two - Set the background image for this slide in the line below -->
           <div class="carousel-item">
-          <img  src="../../assets/1.png" alt="Third slide">
+          <img  src="../../assets/1.png" alt="Second Slide">
             <div class="carousel-caption d-none d-md-block">
               <h3>Second Slide</h3>
               <p>This is a description for the second slide.</p>
             </div>
           </div>
           <!-- Slide Three - Set the background image for this slide in the line below -->
-          <div class="carousel-item" style="background-image: url('http://placehold.it/1900x1080')">
+          <div class="carousel-item">
+            <img  src="../../assets/3.png" alt="Third slide">
             <div class="carousel-caption d-none d-md-block">
               <h3>Third Slide</h3>
               <p>This is a description for the third slide.</p>
@@ -43,7 +45,14 @@
 </template>
 
 <script>
-    
+export default {
+  props: {
+    items: {
+      type: Array,
+      required: true
+    }
+  }
+}
 </script>
 
 <style scoped>
