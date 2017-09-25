@@ -1,20 +1,30 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <hello></hello>
+  <div>
+  <Nbar></Nbar>
+  <carousel-component></carousel-component>
+  <Featurette1></Featurette1>
   </div>
 </template>
 
 <script>
-import Hello from './components/Hello'
+import Nbar from './components/Header/NBar.vue'
+import CarouselComponent from './components/Header/CarouselComponent.vue'
+import Featurette1 from './components/Main/Featurette1.vue'
 
 export default {
   name: 'app',
   components: {
-    Hello
+    Nbar,
+    CarouselComponent,
+    Featurette1
   }
 }
 </script>
 
-<style>
+<style >
+body {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  color: #5a5a5a;
+}
 </style>
