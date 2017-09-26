@@ -1,7 +1,7 @@
 <template>
   <div>
   <Nbar></Nbar>
-  <MainPageComponent :featurettes="featurettes"></MainPageComponent>
+  <router-view :featurettes="featurettes"></router-view>
 
   </div>
 </template>
@@ -32,7 +32,7 @@ export default {
 
 <style >
 body {
-  padding-top: 3rem;
+  padding-top: 4rem;
   padding-bottom: 3rem;
   color: #5a5a5a;
 }
