@@ -2,7 +2,12 @@
   <div>
   <Nbar></Nbar>
   <carousel-component></carousel-component>
-  <Featurette></Featurette>
+  <Featurette v-for="(item,index) in featurettes"
+    :key = "index"
+    :title = "item.title"
+    :description = "item.description"
+    :src = "item.src"
+  ></Featurette>
   </div>
 </template>
 
@@ -13,6 +18,17 @@ import Featurette from './components/Main/Featurette.vue';
 
 export default {
   name: 'app',
+  data () {
+    return {
+      featurettes: [
+        {
+          title: 'MMA',
+          description: 'aaa',
+          src: 'http://via.placeholder.com/500x500'
+        }
+      ]
+    };
+  },
   components: {
     Nbar,
     CarouselComponent,

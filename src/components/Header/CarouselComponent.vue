@@ -46,12 +46,7 @@
 
 <script>
 export default {
-  props: {
-    src: {
-      type: Array,
-      required: true
-    }
-  }
+
 };
 </script>
 
