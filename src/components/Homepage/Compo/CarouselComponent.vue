@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div >
   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -9,7 +9,7 @@
     <div class="carousel-inner" role="listbox">
     <!-- Slide One - Set the background image for this slide in the line below -->
       <div class="carousel-item active">
-        <img  src="../../../assets/2.png" alt="First Slide">
+        <img class="d-block img-fluid"  src="../../../assets/2.png" alt="First Slide">
         <div class="carousel-caption d-none d-md-block">
         <h3>First Slide</h3>
         <p>This is a description for the first slide.</p>
@@ -17,7 +17,7 @@
     </div>
     <!-- Slide Two - Set the background image for this slide in the line below -->
     <div class="carousel-item">
-      <img  src="../../../assets/1.png" alt="Second Slide">
+      <img class="d-block img-fluid" src="../../../assets/1.png" alt="Second Slide">
       <div class="carousel-caption d-none d-md-block">
         <h3>Second Slide</h3>
         <p>This is a description for the second slide.</p>
@@ -25,7 +25,7 @@
     </div>
     <!-- Slide Three - Set the background image for this slide in the line below -->
     <div class="carousel-item">
-      <img  src="../../../assets/3.png" alt="Third slide">
+      <img class="d-block img-fluid" src="../../../assets/3.png" alt="Third slide">
       <div class="carousel-caption d-none d-md-block">
         <h3>Third Slide</h3>
         <p>This is a description for the third slide.</p>
@@ -51,7 +51,7 @@
 <style scoped>
     /* Carousel base class */
 .carousel-item {
-  height: 100vh;
+  height: 80vh;
   background: no-repeat center center scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
