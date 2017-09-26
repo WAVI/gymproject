@@ -7,9 +7,9 @@
 </template>
 
 <script>
-import Nbar from './components/Header/NBar.vue'
-import CarouselComponent from './components/Header/CarouselComponent.vue'
-import Featurette from './components/Main/Featurette.vue'
+import Nbar from './components/Header/NBar.vue';
+import CarouselComponent from './components/Header/CarouselComponent.vue';
+import Featurette from './components/Main/Featurette.vue';
 
 export default {
   name: 'app',
@@ -18,7 +18,7 @@ export default {
     CarouselComponent,
     Featurette
   }
-}
+};
 </script>
 
 <style >
