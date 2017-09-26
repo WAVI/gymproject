@@ -1,5 +1,5 @@
 <template>
-<div>
+<div class="container">
   <hr class="featurette-divider">
   <div class="row featurette">
     <div class="col-md-7">

@@ -13,8 +13,8 @@
 
 <script>
 import Nbar from './components/Header/NBar.vue';
-import CarouselComponent from './components/Header/CarouselComponent.vue';
-import Featurette from './components/Main/Featurette.vue';
+import CarouselComponent from './components/Homepage/Compo/CarouselComponent.vue';
+import Featurette from './components/Homepage/Compo/FeaturetteComponent.vue';
 
 export default {
   name: 'app',
