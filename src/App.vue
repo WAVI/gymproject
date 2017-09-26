@@ -1,20 +1,14 @@
 <template>
   <div>
   <Nbar></Nbar>
-  <carousel-component></carousel-component>
-  <Featurette v-for="(item,index) in featurettes"
-    :key = "index"
-    :title = "item.title"
-    :description = "item.description"
-    :src = "item.src"
-  ></Featurette>
+  <MainPageComponent :featurettes="featurettes"></MainPageComponent>
+
   </div>
 </template>
 
 <script>
 import Nbar from './components/Header/NBar.vue';
-import CarouselComponent from './components/Homepage/Compo/CarouselComponent.vue';
-import Featurette from './components/Homepage/Compo/FeaturetteComponent.vue';
+import MainPageComponent from './components/Homepage/MainPageComponent.vue';
 
 export default {
   name: 'app',
@@ -31,8 +25,7 @@ export default {
   },
   components: {
     Nbar,
-    CarouselComponent,
-    Featurette
+    MainPageComponent
   }
 };
 </script>
