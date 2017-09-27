@@ -9,7 +9,12 @@
       <p class="lead">{{ description }}</p>
     </div>
     <div class="col-md-5">
-      <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image" :src="src">
+      <div id="images">
+          <img class="gallery_product filter hdpe" data-src="holder.js/500x500/auto" alt="Generic placeholder image" :src="src">
+          <img class="gallery_product filter hdpe" data-src="holder.js/500x500/auto" alt="Generic placeholder image" :src="src">
+          <img class="gallery_product filter hdpe" data-src="holder.js/500x500/auto" alt="Generic placeholder image" :src="src">
+          <img class="gallery_product filter hdpe" data-src="holder.js/500x500/auto" alt="Generic placeholder image" :src="src">
+      </div>
     </div>
   </div>
 </div>
@@ -52,4 +57,20 @@ export default {
 .featurette-heading {
     font-size: 50px;
 }
+
+.gallery_product {
+  margin-bottom: 10px;
+}
+
+#images {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 10px;
+}
+
+#images img {
+  width: 100%;
+}
+
 </style>

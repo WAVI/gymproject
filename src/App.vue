@@ -18,7 +18,7 @@ export default {
         {
           title: 'MMA',
           description: 'aaa',
-          src: 'http://via.placeholder.com/500x500'
+          src: 'http://via.placeholder.com/250x250'
         }
       ]
     };
