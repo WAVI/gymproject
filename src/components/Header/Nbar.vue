@@ -24,6 +24,9 @@
         <li class="nav-item">
           <router-link class="nav-link js-scroll-trigger" to="/aboutus">About us</router-link>
         </li>
+        <li class="nav-item">
+          <router-link class="nav-link js-scroll-trigger" to="/album">Album</router-link>
+        </li>
       </ul>
     </div>
     </div>
