@@ -30,10 +30,12 @@ export default {
 };
 </script>
 
-<style >
+<style>
 body {
   padding-top: 4rem;
   padding-bottom: 3rem;
   color: #5a5a5a;
+  background: #eee;
+  /* background-image: url("./assets/background.jpg"); */
 }
 </style>

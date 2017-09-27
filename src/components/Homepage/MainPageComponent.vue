@@ -1,19 +1,24 @@
 <template>
   <div>
     <CarouselComponent></CarouselComponent>
-    <FeaturetteComponent v-for="(item,index) in featurettes"
-    :key = "index"
-    :title = "item.title"
-    :description = "item.description"
-    :src = "item.src"
-    ></FeaturetteComponent> -->
+    <br>
+    <div id="designer" class="container">
+      <FeaturetteComponent v-for="(item,index) in featurettes"
+        :key = "index"
+        :title = "item.title"
+        :description = "item.description"
+        :src = "item.src"
+      ></FeaturetteComponent>
+      <br>
+      <MapLocation></MapLocation>
+    </div>
   </div>
 </template>
 
 <script>
 import CarouselComponent from './Compo/CarouselComponent.vue';
 import FeaturetteComponent from './Compo/FeaturetteComponent.vue';
-
+import MapLocation from './Compo/MapLocation.vue';
 export default {
   props: {
     featurettes: {
@@ -23,10 +28,16 @@ export default {
   },
   components: {
     CarouselComponent,
-    FeaturetteComponent
+    FeaturetteComponent,
+    MapLocation
   }
 };
 </script>
 
-<style>
+<style scoped>
+
+#designer {
+  background: #fff;
+}
+
 </style>
