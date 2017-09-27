@@ -83,4 +83,5 @@ export default {
 textarea {
   resize: none;
 }
+
 </style>

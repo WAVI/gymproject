@@ -3,17 +3,17 @@
   <hr class="featurette-divider">
   <div class="row featurette">
     <div class="col-md-7">
-      <h2 class="featurette-heading">{{ title }}.
-        <span class="text-muted">Checkmate.</span>
+      <h2 class="featurette-heading">{{ title }}
+        <!-- <span class="text-muted">Checkmate.</span> -->
       </h2>
       <p class="lead">{{ description }}</p>
     </div>
     <div class="col-md-5">
       <div id="images">
-          <img class="gallery_product filter hdpe" data-src="holder.js/500x500/auto" alt="Generic placeholder image" :src="src">
-          <img class="gallery_product filter hdpe" data-src="holder.js/500x500/auto" alt="Generic placeholder image" :src="src">
-          <img class="gallery_product filter hdpe" data-src="holder.js/500x500/auto" alt="Generic placeholder image" :src="src">
-          <img class="gallery_product filter hdpe" data-src="holder.js/500x500/auto" alt="Generic placeholder image" :src="src">
+          <img class="gallery_product filter hdpe" data-src="holder.js/500x500/auto" alt="Generic placeholder image" @click="changeMMA" src="http://via.placeholder.com/250x250">
+          <img class="gallery_product filter hdpe" data-src="holder.js/500x500/auto" alt="Generic placeholder image" @click="changeMuayThai" src="http://via.placeholder.com/250x250">
+          <img class="gallery_product filter hdpe" data-src="holder.js/500x500/auto" alt="Generic placeholder image" src="http://via.placeholder.com/250x250">
+          <img class="gallery_product filter hdpe" data-src="holder.js/500x500/auto" alt="Generic placeholder image" src="http://via.placeholder.com/250x250">
       </div>
     </div>
   </div>
@@ -22,18 +22,34 @@
 
 <script>
 export default {
-  props: {
-    description: {
-      type: String,
-      required: true
+  // props: {
+  //   description: {
+  //     type: String,
+  //     required: true
+  //   },
+  //   title: {
+  //     type: String,
+  //     required: true
+  //   },
+  //   src: {
+  //     type: String,
+  //     required: true
+  //   }
+  // }
+  data () {
+    return {
+      title: 'xxxx',
+      description: 'AAAsdas'
+    };
+  },
+  methods: {
+    changeMMA () {
+      this.title = 'AAA';
+      this.description = 'BB';
     },
-    title: {
-      type: String,
-      required: true
-    },
-    src: {
-      type: String,
-      required: true
+    changeMuayThai () {
+      this.title = 'asdasda';
+      this.description = 'BdasdadsaB';
     }
   }
 };
@@ -72,5 +88,7 @@ export default {
 #images img {
   width: 100%;
 }
+
+
 
 </style>
