@@ -22,7 +22,7 @@
           <a class="nav-link js-scroll-trigger" >Become member</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" >About us</a>
+          <router-link class="nav-link js-scroll-trigger" to="/aboutus">About us</router-link>
         </li>
       </ul>
     </div>
